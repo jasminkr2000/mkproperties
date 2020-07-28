@@ -9,14 +9,20 @@ import {HttpClient} from '@angular/common/http';
 })
 export class PropertyListComponent implements OnInit {
 
-  properties: Array<any>;
+  properties: any;
+  //Array<any>;
 
 
   constructor(private http:HttpClient) { }
 
   ngOnInit() :void {
     this.http.get('data/properties.json').subscribe(
-      data=>console.log(data)
+      data=>{
+          this.properties=data;
+        console.log(data)
+      }
+
+
     )
   }
 
