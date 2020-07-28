@@ -28,5 +28,12 @@
     "Name":"Diva House",
     "Type":"House",
     "Price":13676
+  },
+  {
+    "Id":6,
+    "Name":"Divas House",
+    "Type":"House",
+    "Price":13655
   }
 ]
+
